@@ -1,0 +1,9 @@
+four ways to share data from one page to another
+-session, cookies, url, form
+#there is two part in url - (url or address + ? + DATA(name value pair))#here name value pair is like id and user name or any variable
+
+#ADVANCED PASSWORD [LOGOUT FROM ALL DEVICES]
+# one way is to take token for every single device,and delete every device id form database except device id which is activated   
+
+
+#bootstrap.com for front end material,or like navbars,sidebars,etc.

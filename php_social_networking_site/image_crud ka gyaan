@@ -1,0 +1,14 @@
+#for creating or adding product
+. make function for upload images and save data to database
+#then for reading data,
+. feth data from database and show it on index.php and give button to delete and update page with link
+#then for delete data, 
+. make image remove function with unlink functionlity,call it it and then also delete form database after that.
+#then for update,
+. show form to user with already exist values in database and access their new values through post,and change new with old values in database
+. after checking for image file exist or not,if exist at tmp location,delete old image saved at database using image remove function, and
+. update new image at that location using image upload function.
+. and update database too with new image location
+
+
+--bas itna h hai image crud ka gyyan ,aage badhte hai.

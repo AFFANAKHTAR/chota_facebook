@@ -1,0 +1,66 @@
+frontend part--
+if send req is clicked 
+    send request to server
+    change button value to cancel req
+
+if cancel req is clicked 
+    send req to server
+    change to send req
+
+if already friends
+    change button to unfriend
+        if unfriend clicked
+            talks to server and send request
+
+
+PHP & MYSQLI
+    MYSQLI DATABASE TABLE >>> FRIEND_REQUEST
+    ID SENDER RECIEVER
+
+
+LOGIC--
+
+when send req is clicked {
+    insert in table friend_request the value 
+    senderID- $userID of the current userID
+    recieverID- $USERID of the friend page (fetch it from database)
+    flag -0 
+    `0` means not accepted yet 
+    `1` accepted 
+    time-now()
+}
+
+when cancel req is clicked{
+    delete `that row` from table
+    change value to send request
+}
+
+
+93--paul(reciever) 
+
+when logged in{
+    select from friend_request table 
+        friend_request
+            he should be recieverID and flag should be 0
+                notify(or show)
+
+                fetch senderID from friend_request table 
+                    and based on that fetch sender details from user table and show it
+                        give button to accept or reject
+
+                if accept is clicked 
+                    update table friend_request making flag=1
+                            OR
+                    insert values in friends table(user_one,user_two),here user_one is person itself,and user2 is a friend
+                if decline is clicked
+                    delete that row from table friend_request
+
+}
+
+    receivers profile 
+        check if friend - flag should be 1
+                OR
+        if you have separate friends table just show that
+                change button to unfriend
+                    if clicked 
+                        delete row
